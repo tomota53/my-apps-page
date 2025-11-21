@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pencil-kun のアプリ | 個人開発アプリケーション一覧</title>
+    <meta name="description" content="pencil-kunが開発した教育アプリ、メンタルヘルスアプリ、音楽アプリなどを紹介。中学受験、涙活、ストリートピアノなど多数公開中。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        .star {
+            color: #fbbf24;
+            filter: drop-shadow(0 0 2px rgba(251, 191, 36, 0.5));
+        }
+        
+        .category-badge {
+            background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.1));
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        
+        .app-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        
+        .coming-soon {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 min-h-screen">
+    
+    <!-- ヘッダー -->
+    <header class="gradient-bg text-white py-16 px-4">
+        <div class="container mx-auto max-w-4xl">
+            <div class="text-center">
+                <div class="inline-block mb-6 float-animation">
+                    <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center text-5xl shadow-2xl">
+                        👨‍💻
+                    </div>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-black mb-4">
+                    pencil-kun のアプリ
+                </h1>
+                <p class="text-xl md:text-2xl font-medium opacity-90 mb-6">
+                    個人開発アプリケーション一覧
+                </p>
+                <div class="flex flex-wrap justify-center gap-3 text-sm">
+                    <span class="category-badge px-4 py-2 rounded-full font-medium">
+                        💻 アプリ開発者
+                    </span>
+                    <span class="category-badge px-4 py-2 rounded-full font-medium">
+                        🔧 金融系バックエンドエンジニア
+                    </span>
+                    <span class="category-badge px-4 py-2 rounded-full font-medium">
+                        📋 キャリアコンサルタント
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="container mx-auto max-w-6xl px-4 py-12">
+        
+        <!-- メンタルヘルス関連 -->
+        <section class="mb-16">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="text-4xl">🧠</span>
+                <h2 class="text-3xl font-bold text-gray-800">メンタルヘルス関連</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- 涙活コミュニティ -->
+                <a href="https://ruikatsu-app.vercel.app/" target="_blank" class="app-card card-hover block">
+                    <div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-6 text-white">
+                        <div class="text-5xl mb-3">😭</div>
+                        <h3 class="text-2xl font-bold mb-2">涙活コミュニティサイト</h3>
+                        <div class="flex gap-1 mb-3">
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            感情を解放し、涙を通じて心を癒すコミュニティサイト。泣ける映画・音楽の共有、感情の記録機能を提供。
+                        </p>
+                    </div>
+                </a>
+
+                <!-- AIこころ日記 -->
+                <a href="https://emothon-dialy.vercel.app" target="_blank" class="app-card card-hover block">
+                    <div class="bg-gradient-to-br from-purple-500 to-pink-600 p-6 text-white">
+                        <div class="text-5xl mb-3">📔</div>
+                        <h3 class="text-2xl font-bold mb-2">AIこころ日記</h3>
+                        <div class="flex gap-1 mb-3">
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            AIが感情を分析し、アドバイスを提供する日記アプリ。心の状態を可視化し、メンタルヘルスをサポート。
+                        </p>
+                    </div>
+                </a>
+
+                <!-- 宇宙瞑想 -->
+                <a href="https://space-meditation.vercel.app/dashboard" target="_blank" class="app-card card-hover block">
+                    <div class="bg-gradient-to-br from-indigo-500 to-purple-600 p-6 text-white">
+                        <div class="text-5xl mb-3">🌌</div>
+                        <h3 class="text-2xl font-bold mb-2">宇宙瞑想</h3>
+                        <div class="flex gap-1 mb-3">
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            宇宙の映像と音楽で深いリラクゼーションを体験。瞑想タイマー、呼吸ガイド機能付き。
+                        </p>
+                    </div>
+                </a>
+
+                <!-- 罪悪感緩和 -->
+                <a href="https://guilty-free.vercel.app/" target="_blank" class="app-card card-hover block">
+                    <div class="bg-gradient-to-br from-teal-500 to-green-600 p-6 text-white">
+                        <div class="text-5xl mb-3">🕊️</div>
+                        <h3 class="text-2xl font-bold mb-2">罪悪感緩和アプリ</h3>
+                        <div class="flex gap-1 mb-3">
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            罪悪感と向き合い、心を軽くするためのアプリ。認知行動療法の手法を取り入れた設計。
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 音楽関連 -->
+        <section class="mb-16">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="text-4xl">🎹</span>
+                <h2 class="text-3xl font-bold text-gray-800">音楽関連</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-1 gap-6">
+                <!-- ストリートピアノ -->
+                <a href="https://street-piano.vercel.app/" target="_blank" class="app-card card-hover block">
+                    <div class="bg-gradient-to-br from-blue-600 to-cyan-600 p-6 text-white">
+                        <div class="text-5xl mb-3">🎹</div>
+                        <h3 class="text-2xl font-bold mb-2">ストリートピアノコミュニティサイト</h3>
+                        <div class="flex gap-1 mb-3">
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            全国のストリートピアノ情報を検索・共有できるコミュニティサイト。演奏動画の投稿、いいね・コメント機能を搭載。
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
+                                🤝 ストリートピアノTV 提携
+                            </span>
+                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">
+                                🏛️ 神戸市・名古屋市 協力
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 子育て系 -->
+        <section class="mb-16">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="text-4xl">👶</span>
+                <h2 class="text-3xl font-bold text-gray-800">子育て系</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-1 gap-6">
+                <!-- せいちょうのたね -->
+                <a href="https://vercel.com/pencil-projects/taiken-chi" target="_blank" class="app-card card-hover block">
+                    <div class="bg-gradient-to-br from-green-500 to-emerald-600 p-6 text-white">
+                        <div class="text-5xl mb-3">🌱</div>
+                        <h3 class="text-2xl font-bold mb-2">せいちょうのたね</h3>
+                        <div class="flex gap-1 mb-3">
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            子どもの体験を記録・共有するアプリ。成長の記録を可視化し、親子のコミュニケーションを促進。
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 中学受験勉強用アプリ -->
+        <section class="mb-16">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="text-4xl">📚</span>
+                <h2 class="text-3xl font-bold text-gray-800">中学受験勉強用アプリ</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- 歴代総理大臣 -->
+                <a href="https://prime-ministers-app.vercel.app/" target="_blank" class="app-card card-hover block">
+                    <div class="bg-gradient-to-br from-red-500 to-orange-600 p-6 text-white">
+                        <div class="text-5xl mb-3">🏛️</div>
+                        <h3 class="text-2xl font-bold mb-2">歴代総理大臣</h3>
+                        <div class="flex gap-1 mb-3">
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            日本の歴代総理大臣を楽しく学べる学習アプリ。クイズ形式で暗記をサポート。
+                        </p>
+                    </div>
+                </a>
+
+                <!-- 都道府県 -->
+                <a href="https://prefecture-master.vercel.app/" target="_blank" class="app-card card-hover block">
+                    <div class="bg-gradient-to-br from-blue-500 to-sky-600 p-6 text-white">
+                        <div class="text-5xl mb-3">🗾</div>
+                        <h3 class="text-2xl font-bold mb-2">都道府県マスター</h3>
+                        <div class="flex gap-1 mb-3">
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            都道府県の位置・県庁所在地を楽しく学習。地理の基礎を固めるアプリ。
+                        </p>
+                    </div>
+                </a>
+
+                <!-- 世界の国々 -->
+                <a href="https://world-flags-app.vercel.app" target="_blank" class="app-card card-hover block">
+                    <div class="bg-gradient-to-br from-purple-500 to-violet-600 p-6 text-white">
+                        <div class="text-5xl mb-3">🌍</div>
+                        <h3 class="text-2xl font-bold mb-2">世界の国々</h3>
+                        <div class="flex gap-1 mb-3">
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            世界の国旗・首都を楽しく学習。グローバルな視点を育むアプリ。
+                        </p>
+                    </div>
+                </a>
+
+                <!-- 戦国武将 -->
+                <a href="https://sengoku-busho-master-app.vercel.app/" target="_blank" class="app-card card-hover block">
+                    <div class="bg-gradient-to-br from-amber-500 to-yellow-600 p-6 text-white">
+                        <div class="text-5xl mb-3">⚔️</div>
+                        <h3 class="text-2xl font-bold mb-2">戦国武将マスター</h3>
+                        <div class="flex gap-1 mb-3">
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            戦国武将の名前・功績を楽しく学習。日本史の基礎を楽しく学べる。
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- タイピングゲーム -->
+        <section class="mb-16">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="text-4xl">⌨️</span>
+                <h2 class="text-3xl font-bold text-gray-800">タイピングゲーム</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-1 gap-6">
+                <!-- タイピング -->
+                <a href="https://typing-exam-app.vercel.app/" target="_blank" class="app-card card-hover block">
+                    <div class="bg-gradient-to-br from-cyan-500 to-blue-600 p-6 text-white">
+                        <div class="text-5xl mb-3">⌨️</div>
+                        <h3 class="text-2xl font-bold mb-2">中学受験用語専用タイピングゲーム</h3>
+                        <div class="flex gap-1 mb-3">
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                            <span class="star text-2xl">★</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            中学受験の重要用語をタイピングで学習。タイピング速度向上と知識定着を同時に実現。
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 開発中 -->
+        <section class="mb-16">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="text-4xl">🚀</span>
+                <h2 class="text-3xl font-bold text-gray-800">開発中</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- 宇宙ポエム -->
+                <div class="app-card opacity-75">
+                    <div class="coming-soon p-6 text-white">
+                        <div class="text-5xl mb-3">🌌</div>
+                        <h3 class="text-2xl font-bold mb-2">宇宙ポエム投稿アプリ</h3>
+                        <span class="inline-block px-3 py-1 bg-white/30 rounded-full text-sm font-medium">
+                            Coming Soon
+                        </span>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            宇宙をテーマにした詩や短文を投稿・共有するSNSアプリ。NASA APIによる美しい背景画像付き。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Chrome拡張機能 -->
+                <div class="app-card opacity-75">
+                    <div class="coming-soon p-6 text-white">
+                        <div class="text-5xl mb-3">🤝</div>
+                        <h3 class="text-2xl font-bold mb-2">会議活性化用Chrome拡張機能</h3>
+                        <span class="inline-block px-3 py-1 bg-white/30 rounded-full text-sm font-medium">
+                            Coming Soon
+                        </span>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            会議中の感情をAIで分析し、コミュニケーションを活性化。リアルタイム感情分析機能搭載。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 非公開アプリ -->
+        <section class="mb-16">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="text-4xl">🔒</span>
+                <h2 class="text-3xl font-bold text-gray-800">非公開アプリ</h2>
+            </div>
+            
+            <div class="bg-white rounded-2xl p-8 border-2 border-gray-200">
+                <div class="flex items-start gap-4">
+                    <div class="text-5xl">🚀</div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">
+                            宇宙飛行士シミュレーションゲーム
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            JAXAや宇宙関連施設専用のアプリのため、一般公開はしておりません。
+                        </p>
+                        <span class="inline-block px-4 py-2 bg-gray-100 text-gray-700 rounded-lg font-medium">
+                            🏢 企業・施設専用
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="gradient-bg text-white py-12 px-4">
+        <div class="container mx-auto max-w-4xl">
+            <div class="text-center mb-8">
+                <h3 class="text-2xl font-bold mb-4">📢 アプリ制作のご相談</h3>
+                <p class="text-lg mb-6 opacity-90">
+                    何か作ってほしいアプリなどの要望がありましたら、<br class="hidden md:block">
+                    お気軽にご連絡ください！
+                </p>
+                <a href="mailto:tomota53@yahoo.co.jp" class="inline-block px-8 py-4 bg-white text-purple-600 rounded-full font-bold text-lg hover:bg-gray-100 transition-all shadow-lg">
+                    📧 tomota53@yahoo.co.jp
+                </a>
+            </div>
+
+            <div class="border-t border-white/30 pt-8 mt-8">
+                <div class="flex flex-wrap justify-center gap-6 mb-6">
+                    <a href="https://x.com/tomota53" target="_blank" class="text-white hover:text-gray-200 transition-colors font-medium">
+                        🐦 X (Twitter): @tomota53
+                    </a>
+                    <a href="https://github.com/pencil-kun" target="_blank" class="text-white hover:text-gray-200 transition-colors font-medium">
+                        💻 GitHub
+                    </a>
+                    <a href="https://note.com/pencil-kun" target="_blank" class="text-white hover:text-gray-200 transition-colors font-medium">
+                        📝 note
+                    </a>
+                </div>
+                
+                <p class="text-center opacity-75 text-sm">
+                    © 2025 pencil-kun. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
