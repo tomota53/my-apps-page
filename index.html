@@ -55,6 +55,21 @@
         .float-animation {
             animation: float 3s ease-in-out infinite;
         }
+
+        @keyframes shine {
+            0% { background-position: -200% center; }
+            100% { background-position: 200% center; }
+        }
+
+        .recommend-badge {
+            background: linear-gradient(90deg, #f59e0b, #fbbf24, #f59e0b, #fbbf24);
+            background-size: 200% auto;
+            animation: shine 3s linear infinite;
+            color: white;
+            font-weight: bold;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+        }
     </style>
 </head>
 <body class="bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 min-h-screen">
@@ -118,8 +133,8 @@
                             感情を解放し、涙を通じて心を癒すコミュニティサイト。泣ける映画・音楽の共有、感情の記録機能を提供。
                         </p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">
-                                ⭐ おすすめ
+                            <span class="recommend-badge px-4 py-2 rounded-full text-sm">
+                                👑 イチオシ！
                             </span>
                         </div>
                     </div>
@@ -143,8 +158,8 @@
                             AIが感情を分析し、アドバイスを提供する日記アプリ。心の状態を可視化し、メンタルヘルスをサポート。
                         </p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">
-                                ⭐ おすすめ
+                            <span class="recommend-badge px-4 py-2 rounded-full text-sm">
+                                👑 イチオシ！
                             </span>
                         </div>
                     </div>
@@ -252,8 +267,8 @@
                             マンダラチャートで目標を81個の具体的なアクションに分解。ヒートマップで進捗を可視化し、長期目標の達成をサポート。
                         </p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">
-                                ⭐ おすすめ
+                            <span class="recommend-badge px-4 py-2 rounded-full text-sm">
+                                👑 イチオシ！
                             </span>
                             <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">
                                 🤖 AI機能搭載
